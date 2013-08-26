@@ -2,7 +2,9 @@ package com.example.smartbarutility;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
+import android.view.Window;
 
 public class BaseActivity extends Activity {
 
@@ -10,8 +12,7 @@ public class BaseActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if(SmartBarUtils.isMX2()){
-            //SmartBarUtils.hide(getWindow().getDecorView());
-            SmartBarUtils.hide(this,getWindow());
+            SmartBarUtils.hide(this, getWindow(),SmartBarUtils.SMART_BAR_HEIGHT_PIXEL);
         }
         setContentView(R.layout.activity_base);
     }
