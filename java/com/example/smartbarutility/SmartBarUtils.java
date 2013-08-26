@@ -1,4 +1,4 @@
-package com.example.smartbarutility
+package com.example.smartbarutility;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
